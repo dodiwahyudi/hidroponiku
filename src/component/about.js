@@ -4,6 +4,8 @@ import About from '../asset/about.jpg'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+//About adalah component yang menampilkan sekilas tentang usaha ini
+
 const Navigation = () => {
 
   const styleLeft = {

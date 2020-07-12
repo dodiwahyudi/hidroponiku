@@ -1,5 +1,6 @@
 const actionType = {
-  SAYUR: 'SAYUR'
+  SAYUR: 'SAYUR',
+  PESANAN: 'PESANAN'
 }
 
 export default actionType

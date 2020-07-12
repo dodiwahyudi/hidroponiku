@@ -11,14 +11,13 @@ function App() {
     <Router>
       <div>
         <div>
-          <Navbar collapseOnSelect expand="lg" bg="white" fixed="top" >
+          <Navbar collapseOnSelect expand="lg" bg="white" fixed="top" > {/*Global navbar*/}
             <Navbar.Brand as={Link} to="/">HIDROPONIKU</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav"> 
               <Nav>
                 <Nav.Link style={{color: '#415D43'}} as={Link} to="/about">Tentang Kami</Nav.Link>
                 <Nav.Link style={{color: '#415D43'}} as={Link} to="/display">Belanja</Nav.Link>
-                <i className="fa fa-shopping-cart fa-2x" aria-hidden="true" ></i>
               </Nav>
             </Navbar.Collapse>
           </Navbar>

@@ -5,6 +5,7 @@ import {withRouter} from 'react-router-dom' //modul agar didapatkan props histor
 import axios from 'axios'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+//Display adalah komponen yang menampilkan list dari produk setelah dimaping data yang didapat dari API
 
 class Display extends Component {
 
@@ -14,8 +15,6 @@ class Display extends Component {
 
   handleDetail = (i) => this.props.history.push(`/detail/${i}`)
   
-  
-
   render(){
 
   const container = {

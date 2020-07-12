@@ -1,7 +1,8 @@
 import ActionType from './globalActionType'
 
 const globalState = {
-  sayur: {}
+  sayur: {},
+  pesanan: {}
 }
 
 const rootReducer = (state = globalState, action) => {
@@ -11,6 +12,11 @@ const rootReducer = (state = globalState, action) => {
       return{
         ...state,
         sayur: action.payload
+      }
+      case ActionType.PESANAN:
+      return{
+        ...state,
+        pesanan: action.payload
       }
     default:
       return state

@@ -1,7 +1,10 @@
 import React from 'react'
 import {Image, Container, Row, Col} from 'react-bootstrap'
-import {useDispatch, useSelector, useEffect} from 'react-redux'
+import {useSelector} from 'react-redux'
+import FormRequest from './form'
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+//Detail adalah component yang menyajikan informasi mengenai detail sayuran setelah di salah satu list produk di-klik
 
 const Detail = (props) => {
 
@@ -31,8 +34,11 @@ const Detail = (props) => {
           <Image src={sayur[0][1].gambarbesar} style={{width:'400px'}} rounded />
         </Col>
         <Col sm={6} style={styleRight}>
-          <h2>{sayur[0][0]}</h2>
-          <h2 style={{color:'red'}}>{sayur[0][1].harga}</h2>
+          <h1 style={{fontWeight: 'bold', color: '#415D43'}}>{sayur[0][0]}</h1>  
+          <h2 style={{color:'red'}}>{sayur[0][1].harga} <span style={{color:'black', fontSize: '25px'}}>per kg</span></h2>
+          <p><span><i class="fa fa-truck fa-2x" aria-hidden="true"></i></span> Saat ini hanya melayani pengiriman dalam kota</p>
+          <p>Ayo pesan sekarang</p>
+          <FormRequest jenis={sayur[0][0]} harga={sayur[0][1].harga}/>
         </Col>
       </Row>
     </Container>
